@@ -4,59 +4,59 @@ section.claim-section
 					.claim__wrapper
 						.claim__tokens
 							h1.claim__title Claim your very own comb
+							.claim__subtitle-wrapper
 								h2.claim__subtitle Stake Uniswap LP Tokens
-								.claim__row
-									.claim__row-item.token
-										.token__img-wrapper
-											img(
-												src="images/tokens_logo.png"
-												width="32"
-												height="32"
-											).token__logo
-										h3.token__title Your Balance
-										p.token__value 0.00 COMB
-										p.token__supply Unclaimed: 0.000
-											span COMB
-										.token__rate-wrapper
-											span.token__rate ≈ 0.00 Ξ
-											span.token__rate ≈ $0
-										.token__btn-wrapper
-											a(href="3").btn.btn_primary.token__btn Earn
+							.claim__row
+								.claim__row-item.token
+									.token__img-wrapper
+										img(
+											src="images/tokens_logo.png"
+											width="32"
+											height="32"
+										).token__logo
+									h3.token__title Your Balance
+									p.token__value 0.00 COMB
+									p.token__supply Unclaimed: 0.000
+										span COMB
+									.token__rate-wrapper
+										span.token__rate ≈ 0.00 Ξ
+										span.token__rate ≈ $0
+									.token__btn-wrapper
+										a(href="3").btn.btn_primary.token__btn Earn
 
-									.claim__row-item.token
-										.token__img-wrapper
-											img(
-												src="images/tokens_logo.png"
-												width="32"
-												height="32"
-											).token__logo
-										h3.token__title COMB Price
-										p.token__value 0.19 Ξ
-										p.token__supply LP: 406.97Ξ / 2,127.65
-											span COMB
+								.claim__row-item.token
+									.token__img-wrapper
+										img(
+											src="images/tokens_logo.png"
+											width="32"
+											height="32"
+										).token__logo
+									h3.token__title COMB Price
+									p.token__value 0.19 Ξ
+									p.token__supply LP: 406.97Ξ / 2,127.65
+										span COMB
+									.token__rate-wrapper
+										span.token__rate ≈ $88.16
+										span.token__rate ≈ $0
+									.token__btn-wrapper
+										a(href="3").btn.btn_primary.token__btn Buy
+										a(href="3").btn.btn_secondary.token__btn Analytics
+								.claim__row-item
+									.token.token_small
+										h3.token__title Total Circulating Supply
+										p.token__value 4,327 COMB
 										.token__rate-wrapper
-											span.token__rate ≈ $88.16
-											span.token__rate ≈ $0
-										.token__btn-wrapper
-											a(href="3").btn.btn_primary.token__btn Buy
-											a(href="3").btn.btn_secondary.token__btn Analytics
-
-									.claim__row-item
-										.token.token_small
-											h3.token__title Total Circulating Supply
-											p.token__value 4,327 COMB
-											.token__rate-wrapper
-												span.token__rate ≈ 827.59 Ξ
-												span.token__rate ≈ $381,422.06
-											p.token__emission Current emission rate ~39 COMB/day
-										.token.token_small
-											h3.token__title Total Locked Value
-											p.token__value 2,058.06 Ξ
-											.token__rate-wrapper
-												span.token__rate ≈ $948,523.82
-											p.token__emission Locked
+											span.token__rate ≈ 827.59 Ξ
+											span.token__rate ≈ $381,422.06
+										p.token__emission Current emission rate ~39 COMB/day
+									.token.token_small
+										h3.token__title Total Locked Value
+										p.token__value 2,058.06 Ξ
+										.token__rate-wrapper
+											span.token__rate ≈ $948,523.82
+										p.token__emission Locked
 						.claim__pools
-							.claim__title-wrapper
+							.claim__subtitle-wrapper
 								h2.claim__subtitle TOP POOLS
 								a(href="#").link.claim__link View All
 							.claim__row
@@ -149,4 +149,4 @@ section.claim-section
 											a(href="3").btn.btn_secondary.pool__btn.pool__btn_secondary Get LP
 
 					.claim__links
-						
+						include ../../links-aside/links-aside

@@ -1,0 +1,10 @@
+mixin aside-link(name, iconPath, href="#")
+  a(class='link links-aside__link' target="_blank" href=href)
+    .span.links-aside__icon-wrapper
+      img(
+        src=iconPath
+        width="12"
+        heigth="12"
+        alt=""
+      ).links-aside__icon
+    | #{name}
