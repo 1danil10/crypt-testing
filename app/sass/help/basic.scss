@@ -65,7 +65,10 @@ video {
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 100%;
+  @media (min-width: 1280px) {
+    font-size: 62.5%;
+  }
 }
 
 body {
@@ -156,7 +159,9 @@ select {
 .container {
   max-width: 1376px;
   margin: 0 auto;
-  padding: 0 3.2rem;
+
+  @include padding-left(32px);
+  @include padding-right(32px);
   @media (min-width: 1440px) {
     padding: 0;
   }
