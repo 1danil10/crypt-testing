@@ -1,0 +1,14 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = 'testing';
+
+block header
+	include ../blocks/header/header
+
+block content
+	main.main
+		include ../blocks/index/claim-section/claim-section
+
+block footer
+	include ../blocks/footer/footer

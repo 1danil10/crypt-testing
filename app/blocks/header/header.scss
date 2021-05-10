@@ -1,0 +1,74 @@
+.header {
+  background-color: #2e3747;
+  padding: 2rem 0;
+  &__inner {
+    display: flex;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__nav {
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+
+    @media (min-width: 768px) {
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    @media (min-width: 768px) {
+      &:not(:last-child) {
+        margin-right: 6.6rem;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 0.2rem 0 0.3rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: rgba(180, 188, 200, 0.5);
+    transition: $base-transition;
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    .active & {
+      color: $text-color-main;
+    }
+  }
+
+  &__wallet-status {
+    padding: 1.2rem 2rem;
+    border: 0.1rem solid #475267;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    color: $text-color-main;
+
+    @media (min-width: 768px) {
+      padding: 1.2rem 2rem;
+    }
+  }
+
+  &__menu-toggle {
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+}

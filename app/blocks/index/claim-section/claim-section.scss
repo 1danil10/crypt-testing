@@ -1,0 +1,75 @@
+.claim-section {
+}
+
+.claim {
+  display: flex;
+  padding: 3.2rem 0 5rem;
+
+  &__wrapper {
+    flex: 1 1 auto;
+  }
+
+  &__tokens {
+    width: 100%;
+    @media (min-width: 768px) {
+      margin-bottom: 6.4rem;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    color: $text-color-main;
+    line-height: 1.21;
+
+    @media (min-width: 768px) {
+      font-size: 3.2rem;
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  &__subtitle {
+    letter-spacing: 0.05em;
+    color: #778390;
+    line-height: 1.25;
+
+    @media (min-width: 768px) {
+      font-size: 1.6rem;
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  &__row {
+    display: flex;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  &__row-item {
+    @media (min-width: 768px) {
+      flex: 1 1 33.33334%;
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  &__title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__links {
+    min-width: 252px;
+    background-color: gray;
+    min-height: 100%;
+    border-left: 1px solid red;
+    margin-left: 3.2rem;
+  }
+}
+
+// 1090
+//252

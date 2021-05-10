@@ -1,0 +1,194 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+em,
+img,
+strong,
+sub,
+sup,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+* {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $base-font;
+  font-weight: 500;
+  background: #020b1b;
+
+  &.overflow {
+    overflow: hidden;
+  }
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: $base-transition;
+}
+
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+}
+
+input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+textarea {
+  resize: none;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  transition: $base-transition;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+select {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  transition: $base-transition;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+//scroll
+.scroll-wrap::-webkit-scrollbar {
+  width: 3px;
+  background-color: #ccc;
+}
+
+.scroll-wrap::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 2px;
+}
+
+// media
+@media (min-width: 768px) {
+}
+@media (min-width: 1024px) {
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1360px) {
+}
+@media (min-width: 1440px) {
+}
+
+.container {
+  max-width: 1376px;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  @media (min-width: 1440px) {
+    padding: 0;
+  }
+}
+
+.btn {
+  border-radius: 5px;
+  border: 0.1rem solid transparent;
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 1.23; //todo
+  color: $text-color-main;
+
+  @media (min-width: 768px) {
+    padding: 1.2rem 4rem;
+  }
+
+  &-primary {
+    background-color: #189af8;
+  }
+  &-secondary {
+    background-color: transparent;
+    color: #189af8;
+    border-color: #189af8;
+  }
+}
+
+.link {
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 1.2;
+  text-decoration: none;
+  color: #189af8;
+  cursor: pointer;
+}
