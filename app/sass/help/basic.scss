@@ -171,16 +171,17 @@ select {
   color: $text-color-main;
 
   @media (min-width: 768px) {
-    padding: 1.2rem 4rem;
   }
 
-  &-primary {
+  &_primary {
+    padding: 1.2rem 4rem;
     background-color: #189af8;
   }
-  &-secondary {
+  &_secondary {
     background-color: transparent;
     color: #189af8;
     border-color: #189af8;
+    padding: 1.2rem 2.5rem;
   }
 }
 
