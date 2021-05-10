@@ -1,0 +1,25 @@
+mixin pool-item({name, discount, value, pathToLogo, title, info, apy, total})
+  .pool
+    span.pool__discount= discount
+    .pool__info-wrapper
+      p.pool__value=value
+      .pool__logo-wrapper
+        img(
+          src=pathToLogo
+          width="64"
+          height="64"
+          alt=''
+        ).pool__logo
+      h3.pool__title= title
+      p.pool__info= info
+    .pool__divider
+    .pool__text-wrapper.pool__text-wrapper_apy
+      span= apy.name
+      span= apy.value
+    each el in total
+      .pool__text-wrapper
+        span= el.name
+        span= el.value
+    .pool__btn-wrapper
+      a(href=link).btn.btn_primary.pool__btn.pool__btn_primary Select
+      a(href=link).btn.btn_secondary.pool__btn.pool__bt3_secondary Get LP
