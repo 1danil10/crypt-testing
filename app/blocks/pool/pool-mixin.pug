@@ -16,10 +16,12 @@ mixin pool-item({name, discount, value, pathToLogo, title, info, apy, total})
     .pool__text-wrapper.pool__text-wrapper_apy
       span= apy.name
       span= apy.value
-    each el in total
-      .pool__text-wrapper
-        span= el.name
-        span= el.value
+    .pool__total-wrapper
+      h4.pool__subtitle Total Staked
+      each el in total
+        .pool__text-wrapper
+          span= el.name
+          span= el.value
     .pool__btn-wrapper
       a(href=link).btn.btn_primary.pool__btn.pool__btn_primary Select
-      a(href=link).btn.btn_secondary.pool__btn.pool__bt3_secondary Get LP
+      a(href=link).btn.btn_secondary.pool__btn.pool__btn_secondary Get LP

@@ -27,6 +27,7 @@
     letter-spacing: 0.05em;
     color: #778390;
     margin-bottom: 1.2rem;
+    font-weight: 500;
   }
 
   &__value {
@@ -69,7 +70,7 @@
 
     @media (min-width: 768px) {
       &:not(:last-child) {
-        margin-right: 2.4rem;
+        margin-right: 2.55rem;
       }
     }
   }
@@ -87,8 +88,8 @@
   }
 
   &__btn {
-    &:not(:last-child) {
-      margin-right: 2.4rem; //todo
+    &:not(:first-child) {
+      margin-left: 2.4rem; //todo
     }
   }
 
