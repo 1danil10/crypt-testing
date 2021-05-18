@@ -57,7 +57,7 @@
     font-size: 2rem;
     line-height: 1.2;
     color: $text-color-main;
-    margin-bottom: 1.6rem;
+    margin-bottom: 1.7rem;
   }
 
   &__info {
@@ -90,7 +90,7 @@
   }
 
   &__total-wrapper {
-    margin-bottom: 1.2rem; //todo
+    margin-bottom: 1.8rem; //todo
   }
   &__subtitle {
     font-weight: 500;
@@ -98,26 +98,34 @@
     line-height: 1.23;
     letter-spacing: 0.05em;
     color: #778390;
-    margin-bottom: 1.6rem; //todo
+    margin-bottom: 1.7rem; //todo
   }
 
   &__btn-wrapper {
     margin-top: auto;
     align-self: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   &__btn {
-    &:not(:first-child) {
-      margin-left: 1.2em; //1.6 to 1.2 todo pb
+    margin: 0 auto 1.2rem;
+    &:last-child {
+      margin: 0 auto;
     }
     &_primary {
-      padding: 1.2rem 3.5rem;
+      padding: 1.1rem 3.5rem;
     }
     &_secondary {
-      padding: 1.2rem 3.4rem;
+      padding: 1.1rem 3.3rem;
+    }
+
+    @media (min-width: 1280px) {
+      &:not(:last-child) {
+        margin: 0 1.2rem 0 0;
+      }
     }
   }
 }

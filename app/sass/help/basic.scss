@@ -65,7 +65,10 @@ video {
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 100%;
+  @media (min-width: 1280px) {
+    font-size: 62.5%;
+  }
 }
 
 body {
@@ -156,7 +159,9 @@ select {
 .container {
   max-width: 1376px;
   margin: 0 auto;
-  padding: 0 3.2rem;
+
+  @include padding-left(32px);
+  @include padding-right(32px);
   @media (min-width: 1440px) {
     padding: 0;
   }
@@ -174,14 +179,14 @@ select {
   }
 
   &_primary {
-    padding: 1.2rem 4rem;
+    padding: 1.1rem 4rem;
     background-color: #189af8;
   }
   &_secondary {
     background-color: transparent;
     color: #189af8;
     border-color: #189af8;
-    padding: 1.2rem 2.5rem;
+    padding: 1.1rem 2.3rem;
   }
 }
 
